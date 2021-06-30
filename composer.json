@@ -1,0 +1,27 @@
+{
+  "name": "nishstha/monday-laravel",
+  "description": "Laravel wrapper to interface with monday graphql api",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Nishstha\\Monday\\": "src/",
+      "Nishstha\\Monday\\Facades\\": "src/Facades/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Nischal Shrestha",
+      "email": "developer.nish@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.3"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nishstha\\Monday\\MondayServiceProvider"
+      ]
+    }
+  }
+}
